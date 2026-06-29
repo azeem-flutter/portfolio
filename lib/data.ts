@@ -61,6 +61,8 @@ export type Media = {
   src: string;
   alt: string;
   frame: 'browser' | 'phone' | 'plain';
+  type?: 'image' | 'video';
+  thumbnail?: string;
 };
 
 export type ProjectLinks = {
@@ -104,6 +106,7 @@ export const projects: Project[] = [
     status: 'active',
     highlight: true,
     media: [
+      { src: '/projects/n8n-ecosystem/linkedin-post-generator.mp4', alt: 'OpenAI LinkedIn Post Generator — end-to-end workflow demo', frame: 'browser', type: 'video', thumbnail: '/projects/n8n-ecosystem/linkedin-thumbnail.png' },
       { src: '/projects/n8n-ecosystem/1.png', alt: 'Lead outreach agent canvas in n8n', frame: 'browser' },
       { src: '/projects/n8n-ecosystem/2.png', alt: 'Customer service agent workflow in n8n', frame: 'browser' },
       { src: '/projects/n8n-ecosystem/3.png', alt: 'Invoice processing workflow in n8n', frame: 'browser' },

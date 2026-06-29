@@ -86,6 +86,8 @@ export default function Lightbox({
             onClick={(e) => e.stopPropagation()}
             className="w-full max-w-2xl"
           >
+            {/* Pass no onClick so MediaFrame knows it's in lightbox mode.
+                For videos this renders the full <video> player; for images it renders the image. */}
             <MediaFrame media={current} />
             <p className="text-center text-ink-muted text-sm mt-4 font-mono">{current.alt}</p>
           </motion.div>
