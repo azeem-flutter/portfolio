@@ -5,7 +5,8 @@ import { stack } from '@/lib/data';
 
 export default function TechStack() {
   return (
-    <section id="stack" className="section-padding border-t border-base-line bg-base-surface/30">
+    <section id="stack" className="section-padding border-t border-base-line bg-gradient-to-b from-base-surface/30 to-base/20 relative overflow-hidden">
+      <div className="absolute left-0 top-10 w-72 h-72 bg-accent-indigo/10 blur-3xl pointer-events-none" />
       <div className="max-w-6xl mx-auto px-6 sm:px-8">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
@@ -30,7 +31,7 @@ export default function TechStack() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.45, delay: i * 0.06 }}
-              className="group relative rounded-xl glass p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-accent-indigo/40"
+              className="group relative rounded-2xl glass p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-glow hover:border-accent-indigo/40"
             >
               <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-ink-faint mb-1">
                 {category.eyebrow}

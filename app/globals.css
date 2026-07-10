@@ -13,6 +13,12 @@ html {
 
 body {
   background-color: #0B0F19;
+  background-image:
+    radial-gradient(circle at 18% 12%, rgba(111, 92, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 82% 18%, rgba(61, 220, 151, 0.12), transparent 26%),
+    radial-gradient(circle at 50% 100%, rgba(180, 83, 255, 0.1), transparent 30%),
+    linear-gradient(180deg, #0B0F19 0%, #0D1322 48%, #0B0F19 100%);
+  background-attachment: fixed;
   color: #E7EBF5;
 }
 
@@ -55,7 +61,7 @@ button:focus-visible,
 [tabindex]:focus-visible {
   outline: 2px solid #6F5CFF;
   outline-offset: 3px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .glass {

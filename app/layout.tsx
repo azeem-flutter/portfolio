@@ -26,7 +26,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Muhammad Azeem — Software Engineer & Automation Developer',
   description:
-    'Building intelligent backends, seamless mobile experiences, and autonomous workflows. Portfolio of Muhammad Azeem — Flutter, FastAPI, n8n & AI automation.',
+    'Portfolio of Muhammad Azeem — software engineer focused on polished mobile apps, backend APIs, and AI automation with Flutter, FastAPI, and n8n.',
   keywords: [
     'Muhammad Azeem',
     'Software Engineer',
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Muhammad Azeem — Software Engineer & Automation Developer',
     description:
-      'Building intelligent backends, seamless mobile experiences, and autonomous workflows.',
+      'Polished mobile apps, resilient backend APIs, and AI automation built with Flutter, FastAPI, and n8n.',
     type: 'website',
   },
 };

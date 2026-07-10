@@ -1,13 +1,13 @@
 export const profile = {
   name: 'Muhammad Azeem',
   role: 'Software Engineer & Automation Developer',
-  hook: 'Building intelligent backends, seamless mobile experiences, and autonomous workflows.',
+  hook: 'I build polished mobile apps, resilient backend APIs, and automation systems that remove repetitive work.',
   github: 'https://github.com/azeem-flutter',
   githubLabel: 'github.com/azeem-flutter',
   email: 'azeemjamilbsse@gmail.com',
   phone: '+92 324-7618292',
   about:
-    "I'm a software engineer from National Textile University with a habit of connecting things that usually live in separate worlds — Flutter apps on one side, FastAPI services on the other, and n8n pipelines stitching the two together so neither has to wait on a human to move data between them. My focus is building systems that keep working after I close the laptop: mobile apps with real offline-first state management, backends that hold up under real traffic, and AI-driven automations that quietly do the repetitive work a team shouldn't have to.",
+    "I'm a software engineer from National Textile University focused on building products that feel complete from the first screen to the last backend job. I work across Flutter, FastAPI, and n8n so mobile apps, APIs, and automations stay tightly connected. The goal is always the same: ship systems that are polished for users, dependable under real traffic, and useful long after the demo ends.",
 };
 
 export type StackCategory = {
@@ -132,6 +132,7 @@ export const projects: Project[] = [
     ],
     status: 'shipped',
     media: [
+      { src: '/projects/skillguide-ai/skillguide-ai-demo.mp4', alt: 'SkillGuide AI — app demo', frame: 'browser', type: 'video', thumbnail: '/projects/skillguide-ai/skillguide-ai-thumbnail.png' },
       { src: '/projects/skillguide-ai/1.jpeg', alt: 'SkillGuide AI home screen', frame: 'phone' },
       { src: '/projects/skillguide-ai/2.jpeg', alt: 'SkillGuide AI job matching screen', frame: 'phone' },
       { src: '/projects/skillguide-ai/3.jpeg', alt: 'SkillGuide AI resume generator screen', frame: 'phone' },

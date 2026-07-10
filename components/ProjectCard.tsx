@@ -27,12 +27,15 @@ export default function ProjectCard({ project, index }: { project: Project; inde
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-60px' }}
       transition={{ duration: 0.45, delay: (index % 3) * 0.06 }}
-      className={`group relative rounded-2xl glass p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 ${
+      className={`group relative rounded-3xl glass p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 overflow-hidden ${
         project.highlight
           ? 'border-accent-indigo/30 hover:shadow-glow lg:col-span-2'
           : 'hover:shadow-glow-purple hover:border-accent-purple/30'
       }`}
     >
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
+      <div className="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-accent-indigo/10 blur-3xl pointer-events-none" />
+
       <div className="flex items-start justify-between gap-4 mb-3">
         <div>
           <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-accent-purple mb-2">
@@ -48,7 +51,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
         </span>
       </div>
 
-      <p className="text-ink-muted text-sm leading-relaxed mb-4">{project.tagline}</p>
+      <p className="text-ink-muted text-sm leading-relaxed mb-5 max-w-[60ch]">{project.tagline}</p>
 
       {/* Visual proof strip */}
       {project.media.length > 0 && (
@@ -69,11 +72,11 @@ export default function ProjectCard({ project, index }: { project: Project; inde
         </div>
       )}
 
-      <div className="flex flex-wrap gap-2 mb-4">
+      <div className="flex flex-wrap gap-2 mb-5">
         {project.tech.map((t) => (
           <span
             key={t}
-            className="px-2.5 py-1 rounded-md bg-base-raised border border-base-line text-[11px] font-mono text-ink-muted"
+            className="px-2.5 py-1 rounded-full bg-base-raised border border-base-line text-[11px] font-mono text-ink-muted"
           >
             {t}
           </span>
@@ -82,7 +85,7 @@ export default function ProjectCard({ project, index }: { project: Project; inde
 
       {/* Proof links — only rendered when real URLs exist in lib/data.ts */}
       {hasLinks && (
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-5">
           {links.demo && (
             <a
               href={links.demo}
